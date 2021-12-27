@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArmutActivity">
+
+    <Button
+        android:id="@+id/sepeteekleelma2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="sepete ekle"
+        app:layout_constraintEnd_toEndOf="@+id/arti2"
+        app:layout_constraintStart_toStartOf="@+id/eksi2"
+        app:layout_constraintTop_toBottomOf="@+id/etmiktar2" />
+
+    <Button
+        android:id="@+id/alisveristamamlaelma2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="islemSecimiarmut"
+        android:text="alışverişi tamamla"
+        app:layout_constraintStart_toStartOf="@+id/sepeteekleelma2"
+        app:layout_constraintTop_toBottomOf="@+id/sepeteekleelma2" />
+
+    <ImageButton
+        android:id="@+id/eksi2"
+        android:layout_width="58dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/eksi"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/arti2"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/arti"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etmiktar2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="miktar kg"
+        android:inputType="number|textPersonName|numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/arti2"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/eksi2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/armut" />
+</androidx.constraintlayout.widget.ConstraintLayout>

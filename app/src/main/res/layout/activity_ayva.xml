@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyvaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ElmaActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-26dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ayva" />
+
+        <Button
+            android:id="@+id/sepeteekleayva"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="52dp"
+            android:onClick="islemSecimielma"
+            android:text="sepete ekle"
+            app:layout_constraintEnd_toEndOf="@+id/arti"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/eksi"
+            app:layout_constraintTop_toBottomOf="@+id/etmiktar" />
+
+        <Button
+            android:id="@+id/alisveristamamlaayva"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="islemSecimielma"
+            android:text="alışverişi tamamla"
+            app:layout_constraintEnd_toEndOf="@+id/sepeteekleayva"
+            app:layout_constraintStart_toStartOf="@+id/sepeteekleayva"
+            app:layout_constraintTop_toBottomOf="@+id/sepeteekleayva" />
+
+        <ImageButton
+            android:id="@+id/eksi"
+            android:layout_width="58dp"
+            android:layout_height="73dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/sepeteekleayva"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:srcCompat="@drawable/eksi"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/arti"
+            android:layout_width="55dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/sepeteekleayva"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:srcCompat="@drawable/arti"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/etmiktar"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="miktar kg"
+            android:inputType="number|textPersonName|numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/arti"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toEndOf="@+id/eksi"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
